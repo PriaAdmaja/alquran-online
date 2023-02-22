@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.main-nav {
+  position: fixed;
+}
+
+.arab-list {
+  font-family: 'Noto Naskh Arabic', serif;
+  font-size: 1.1em;
+}
+
+.modal {
+  text-align: justify;
+}
+.arabic {
+  font-family: 'Noto Naskh Arabic', serif;
+  text-align: right;
+  font-size: 2.5em;
+  padding: 5px 0px;
+}
+
+.basmalah {
+  font-family: 'Noto Naskh Arabic', serif;
+  font-size: 2.5em;
+  padding: 5px 0px;
+}
+
+.ayat {
+  border-bottom: groove;
+  border-width: .4px;
+  padding: 15px 0px;
+}
+
+.up-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  color: whitesmoke;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.up-button:hover {
+  cursor: pointer;
+  background-color:cadetblue;
+}
+
+
+.juz {
+  width: 350px;
+
+}
+
+.eff:hover {
+  cursor: pointer;
+  transform: scale(105%);
+  box-shadow: 2px 2px 4px 1px rgba(87, 87, 87, 0.4);
+  border-color: transparent;
+}
+
+.banner {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.img-banner {
+  max-width: 100%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

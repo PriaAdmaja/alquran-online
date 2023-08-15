@@ -7,6 +7,8 @@ import Basmallah from "../utils/basmallah"
 import ModalTafsir from "../utils/modal"
 import Loading from "../utils/loading"
 import UpButton from "../layouts/upbutton"
+import { useDispatch } from "react-redux"
+import { pageTitleAction } from "../../redux/slices/pageTitle"
 
 const DetailJuz = () => {
     const location = useLocation()
@@ -15,6 +17,7 @@ const DetailJuz = () => {
     const [show, setShow] = useState(false)
     const [getTaf, setTaf] = useState()
     const [loading, setLoading] = useState(false)
+    const dispatch = useDispatch()
 
     useEffect(() => {
         let isCanceled = true
@@ -27,8 +30,8 @@ const DetailJuz = () => {
         }
         return () => { isCanceled = false }
     }, [])
-
-
+    datas.data?.juz && dispatch(pageTitleAction.setpageTitle(`JUZ ${datas.data?.juz}`))
+    
     useEffect(() => {
         const onScroll = function () {
             if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {

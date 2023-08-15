@@ -1,10 +1,11 @@
-import { Container, Navbar, Nav } from "react-bootstrap"
-import React from "react"
+import { Container, Navbar, Nav, Button } from "react-bootstrap"
+import React, { useEffect } from "react"
 import { useSelector } from "react-redux"
 
 
 const Navigation = () => {
-    const {title, body} = useSelector(state => state.surah)
+    // const {title, body} = useSelector(state => state.surah)
+    const pageTitle = useSelector(state => state.pageTitle)
     
     return (
         <React.Fragment >
@@ -16,9 +17,9 @@ const Navigation = () => {
                         <Nav className="me-auto">
                             <Nav.Link href="/juz">Juz</Nav.Link>
                             <Nav.Link href="/surah">Surah</Nav.Link>
-                            <Nav.Link >{title}</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
+                    <Navbar.Brand href="/"><b>{pageTitle.pageTitle}</b></Navbar.Brand>
                    
                 </Container>
             </Navbar>

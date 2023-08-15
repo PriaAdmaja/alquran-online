@@ -6,7 +6,7 @@ import ModalTafsir from "../utils/modal"
 import Loading from "../utils/loading"
 import UpButton from "../layouts/upbutton"
 import { useDispatch } from "react-redux"
-import { update } from "../../features/surah/surahSlice"
+import { pageTitleAction } from "../../redux/slices/pageTitle"
 
 
 
@@ -18,7 +18,6 @@ const DetailSurah = () => {
     const [getTaf, setTaf] = useState()
     const [loading, setLoading] = useState(false)
     const dispatch = useDispatch()
-    const [title, setTitle] = useState('')
     
     useEffect(() => {
         let isCanceled = false
@@ -31,13 +30,8 @@ const DetailSurah = () => {
         }
         return () => {isCanceled = true}
     }, [])
-    console.log(datas.data?.name.transliteration.id)
-    
-    useEffect(() => {
-        // setTitle(datas.data?.name.transliteration.id)
-        // dispatch(update({title}))
-        
-    }, [])
+    dispatch(pageTitleAction.setpageTitle(datas.data?.name.transliteration.id))
+    // console.log(datas.data?.name.transliteration.id);
 
     useEffect(() => {
         const onScroll = function () {

@@ -37,6 +37,10 @@
   font-size: 1.1em;
 }
 
+.list:hover {
+  cursor: pointer;
+}
+
 .modal {
   text-align: justify;
 }

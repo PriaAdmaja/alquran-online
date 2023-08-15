@@ -31,7 +31,7 @@ const ListSurah = () => {
                 <tbody>
                     {datas.data?.map((data, i) => {
                         return (
-                            <tr key={i} onClick={() => openSurah(data.number)}>
+                            <tr key={i} onClick={() => openSurah(data.number)} className="list">
                                 <td>{data.number}</td>
                                 <td>{data.name.transliteration.id}</td>
                                 <td className="arab-list align-middle" >{data.name.short}</td>

@@ -9,7 +9,7 @@ const ListSurah = () => {
 
     useEffect(() => {
         let isCanceled = true
-        if (isCanceled == true) {
+        if (isCanceled === true) {
             setLoading(true)
             axios({
                 method: "GET",

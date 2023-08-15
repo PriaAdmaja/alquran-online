@@ -10,7 +10,9 @@ import DetailJuz from './components/juz/detail.juz';
 import Juz from './components/juz/main.juz';
 
 
+
 function App() {
+
   return (
     <>
       <Router>

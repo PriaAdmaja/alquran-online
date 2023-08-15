@@ -30,7 +30,7 @@ const DetailSurah = () => {
         }
         return () => {isCanceled = true}
     }, [])
-    dispatch(pageTitleAction.setpageTitle(datas.data?.name.transliteration.id))
+    datas.data?.name.transliteration.id && dispatch(pageTitleAction.setpageTitle(`Surah ${datas.data?.name.transliteration.id}`))
     // console.log(datas.data?.name.transliteration.id);
 
     useEffect(() => {

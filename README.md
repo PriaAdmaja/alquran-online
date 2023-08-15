@@ -40,18 +40,18 @@ REACT_APP_BASEURL = Your Rest API
 
 ## Demo
 
-Click [here](https://client-coffee-shop-react.vercel.app/)
+Click [here](https://alquran-online-pria.vercel.app/)
 
 ## Screenshots
 
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/109842306/240834687-cd588d34-2aee-4e0b-8644-ae40621feee8.PNG" width="370" />
-  <img src="https://user-images.githubusercontent.com/109842306/240834952-39c459b6-2dcd-429b-a419-de503be962be.PNG" width="370" /> 
+  <img src="https://user-images.githubusercontent.com/109842306/260669614-b968d3a4-af30-4135-86c9-584176447935.PNG" width="370" />
+  <img src="https://user-images.githubusercontent.com/109842306/260669658-3a1f7176-2a55-4cd3-bebc-f5b31eca719d.PNG" width="370" /> 
 </p>
 
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/109842306/240835287-0f4c525c-9cd5-49cd-a25f-f0f9fc013ff4.PNG" width="370" />
-  <img src="https://user-images.githubusercontent.com/109842306/240835111-dc03162b-d0b4-48fd-87ba-6306e7175409.PNG" width="370" /> 
+  <img src="https://user-images.githubusercontent.com/109842306/260669668-89c65e37-ebc6-4790-b031-076f846bc3ac.PNG" width="370" />
+  <img src="https://user-images.githubusercontent.com/109842306/260669675-914a888f-2ea7-49a6-ba69-bd576201569e.PNG" width="370" /> 
 </p>
 
 
@@ -61,10 +61,10 @@ Click [here](https://client-coffee-shop-react.vercel.app/)
 
 ## Related
 
-Here are some related projects
+This project use public API from
 
-- [Backend Coffee-Shop](https://github.com/PriaAdmaja/backend-coffee_shop)
-- [Mobile Coffee-Shop](https://github.com/PriaAdmaja/mobile-coffee)
+- [Quran API](https://github.com/gadingnst/quran-api)
+
 
 ## Feedback
 
